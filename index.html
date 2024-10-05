@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dale's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>  
+
+    <!-- Header -->
+    <header id ="header">
+        <div class="title">
+        <h1>Dale's Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Hello, My name is Dale Malapitan!</h1>
+        <p>Welcome to my Portfolio, I am a second year student at Ontario Tech University, pursuing a Bachelor's of IT in Technology Management </p>
+    </section>
+
+    <section id="about">
+        <img src="images/avatar.png" alt="Me!">
+        <p>I am an avid fan of technology and video games. In my free time I also enjoy physcial activites like rock climbing, weight lifting and snowboarding!</p>
+        <video controls autoplay muted>
+            <source src="video/IMG_5685.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projectContainer">
+            <!-- Project 1 -->
+            <figure class="projectItem">
+                <h3>Typing Test Game</h3>
+                <img src="images/project1.png" alt="Typing Test Game">
+                <figcaption>
+                    <p>This is an interactive typing speed game that tracks your WPM speed and improves your accuracy. Alongside my team, we created this porject with Jakarta EE, JavaScript, Java and HTML/CSS. </p>
+               
+                </figcaption>
+            </figure>
+    
+            <!-- Project 2 -->
+            <figure class="projectItem">
+                <h3>Chat Room WebApp</h3>
+                <img src="images/project2.png" alt="Chat Room WebApp">
+                <figcaption>
+                    <p>The Chat Room WebApp is a fully functional application that I created alongside my peers. This project was
+                        designed to showcase Jakarta websockets. This WebApp allows the user to create, join and chat in individual chat rooms.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+          <div>
+            <h1 class="sectionTitle">Contact Me</h1>
+          </div>
+          <div class="contactItems">
+            <div class="contactItem">
+              <div class="icon">
+                <img src="images/contactimg.png" alt="Contact Info Image" />
+            </div>
+              <div class="contactInfo">
+                <form
+                  action="#"
+                  method="post"
+                  class="phpEmailForm"
+                >
+                <p>Name</p>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <p>Email</p>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <p>Subject</p>
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                  <p>Message</p>
+                  <textarea
+                    style="height: 150px"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <div class="button">
+                    <button class = "button" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ 
+    <footer id="footer">
+        <div class="footer container">
+          <div class="logo">
+            <h1><span>Thank you for visiting my Portfolio!</span></h1>
+          </div>
+          <h2>Dale.Malapitan@ontariotechu.net</h2>
+          <p>Copyright © 2020 DM. All rights reserved</p>
+        </div>
+      </footer>
+
+</body>
+</html>
